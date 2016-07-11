@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body id="page-top">
+	
+	{% include header_fullpage_carousel.html %}
+	
+	{{ content }}
+	
+	{% include navbar.html %}<!-- navbar is position here so taht it is stacked on top of the rest of the content -->
+    
+	<!-- Footer -->
+	{% include footer.html %}
+
+</body>
+
+</html>

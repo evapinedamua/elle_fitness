@@ -1,0 +1,40 @@
+<!-- Navigation -->
+<nav id="stickynav" class="navbar navbar-custom" role="navigation">
+	<div class="nav-container nabvar-inner">
+		<div class="navbar-header text-center">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+				<i class="fa fa-bars"></i>
+			</button>
+			<a href="{% if page.url == '/index.html' %}#page-top{% else %}{{ site.baseurl }}/{% endif %}">
+				<img class="navbar-logo" src="{{ site.baseurl }}/img/logo_white.png"/>
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse navbar-main-collapse">
+			<ul class="nav nav-justified">
+				<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+				<li class="page-scroll hidden">
+					
+				</li>
+				<li {% if page.url == '/fitness/index.html' %} class="active" {% endif %}>
+					<a class="page-scroll" href="{{ '/fitness' | prepend: site.baseurl }}">fitness</a>
+				</li>
+				<li {% if page.url == '/tnt/index.html' %} class="active" {% endif %}>
+					<a class="page-scroll" href="{{ '/tnt' | prepend: site.baseurl }}">t & t</a>
+				</li>
+				<!--<li {% if page.url == '/fashion/index.html' %} class="active" {% endif %}>
+					<a class="page-scroll" href="{{ '/fashion' | prepend: site.baseurl }}">Fashion</a>
+				</li>-->
+				<li {% if page.url == '/about/index.html' %} class="active" {% endif %}>
+					<a class="page-scroll" href="{{ '/about' | prepend: site.baseurl }}">About</a>
+				</li>
+				<li {% if page.url == '/contact/index.html' %} class="active" {% endif %}>
+					<a class="page-scroll" href="{{ '/contact' | prepend: site.baseurl }}">Contact</a>
+				</li>
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+	<!-- /.container -->
+</nav>
