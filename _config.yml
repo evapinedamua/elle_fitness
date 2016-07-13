@@ -3,7 +3,7 @@ title: Eva Pineda
 email: info@eveyrthingeva.co.uk
 description:
 baseurl: "/elle_fitness" # the subpath of your site, e.g. /blog/
-url: "http://everythingeva.co.uk" # the base hostname & protocol for your site
+url: "https://everythingeva.co.uk" # the base hostname & protocol for your site
 twitter_username: evapinedamua
 paginate: 10
 
@@ -13,7 +13,7 @@ highlighter: pygments
 
 # prose.io  settings
 prose:
-  siteurl: "http://evapinedamua.github.io/"
+  siteurl: "https://evapinedamua.github.io/"
   media: "img"
   ignore:
    - .gitignore
